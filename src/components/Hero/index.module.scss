@@ -2,7 +2,7 @@
 @import "../../styles/_variables";
 
 .Hero {
-  height: 60vh;
+  height: 55vh;
 
   background: url("https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/cover.png");
   background-size: 100vh;
@@ -11,7 +11,8 @@
   background-attachment: fixed;
 
   @include desktop {
-    background-size: 100vw;
-    height: 560px;
+    background-size: contain;
+
+    height: 640px;
   }
 }
