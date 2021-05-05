@@ -2,16 +2,14 @@ import styles from "./App.module.scss";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
-import PostContainer from "./components/PostContainer";
+import MainBody from "./components/MainBody";
 
 function App() {
   return (
     <div className={styles.App}>
       <Navbar />
       <Hero />
-      <main>
-        <PostContainer />
-      </main>
+      <MainBody />
     </div>
   );
 }
