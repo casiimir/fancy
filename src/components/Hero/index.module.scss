@@ -1,0 +1,15 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+
+.Hero {
+  height: 60vh;
+
+  background: url("https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/cover.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    height: 640px;
+  }
+}
