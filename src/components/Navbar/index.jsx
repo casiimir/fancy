@@ -1,11 +1,30 @@
 import styles from "./index.module.scss";
+import menu from "../../img/menu.png";
 
 const Navbar = () => {
   return (
-    <div className={styles.Navbar}>
-      <h1>Title</h1>
-      <h3>Cross</h3>
-    </div>
+    <nav className={styles.Navbar}>
+      <h1 className={styles.Navbar_logo}>Fancy</h1>
+
+      {/* Mobile - hamburger style */}
+      <button className={styles.Navbar_btn}>
+        <img
+          className={styles.Navbar_btn__image}
+          onClick={() => {}}
+          src={menu}
+          alt="menu-icon"
+        />
+      </button>
+
+      {/* Desktop - classical style */}
+      <div className={styles.Navbar_links}>
+        <ul>
+          <li>lorem</li>
+          <li>ipsum</li>
+          <li>dolor</li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
