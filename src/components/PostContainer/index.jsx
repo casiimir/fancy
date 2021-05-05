@@ -9,10 +9,7 @@ const PostContainer = () => {
   useEffect(() => {
     const res = axios.get("https://jsonplaceholder.typicode.com/posts");
 
-    res.then(({ data }) => {
-      console.log(postList);
-      setPostList(data.filter((post) => post.id === 1));
-    });
+    res.then(({ data }) => setPostList(data.filter((post) => post.id === 1)));
   }, []);
 
   return (
