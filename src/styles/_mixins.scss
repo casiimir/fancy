@@ -1,0 +1,65 @@
+@mixin center($width: 100%, $ma-y: 0, $ma-x: auto) {
+  width: $width;
+  margin: $ma-y $ma-x;
+}
+
+@mixin flexbox(
+  $justify-content: center,
+  $align-items: center,
+  $flex-direction: row
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+// Absolute positioning
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// CSS3 general prefix setter -> usage: @include css3-prefix(translateY(50px));
+@mixin css3-prefix($prop, $value) {
+  -webkit-#{$prop}: #{$value};
+  -moz-#{$prop}: #{$value};
+  -ms-#{$prop}: #{$value};
+  -o-#{$prop}: #{$value};
+  #{$prop}: #{$value};
+}
+
+// CSS3 animation prefix setter -> @include keyframes(opacity) { ... }
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Media queries
+@mixin tablet {
+  @media (min-width: 676px + 1px) and (max-width: 1024px - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 676px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
