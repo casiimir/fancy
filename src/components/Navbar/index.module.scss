@@ -4,6 +4,12 @@
 .Navbar {
   @include flexbox(space-between, center);
 
+  padding: 0 32px;
+
+  @include desktop {
+    padding: 0 64px;
+  }
+
   &_logo {
     font-family: $header_text;
     font-weight: bold;
