@@ -4,7 +4,7 @@ import menu from "../../img/menu.png";
 const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
-      <h1 className={styles.Navbar_logo}>Fancy</h1>
+      <h3 className={styles.Navbar_logo}>Fancy</h3>
 
       {/* Mobile - hamburger style */}
       <button className={styles.Navbar_btn}>
