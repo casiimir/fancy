@@ -1,0 +1,51 @@
+@import "../../styles/_mixins";
+@import "../../styles/_variables";
+
+.SinglePost {
+  padding: 16px 24px;
+
+  @include desktop {
+    width: 61.6%;
+  }
+
+  hr {
+    margin: 25px 0 20px;
+    border-top: 1px solid $hr_color;
+  }
+
+  &_subtitle {
+    font-family: $header_text;
+    font-weight: normal;
+  }
+
+  &_title {
+    font-family: $header_text;
+    @include desktop {
+      font-size: 36px;
+    }
+  }
+
+  &_content {
+    font-family: $content_text;
+  }
+
+  &_info {
+    @include flexbox(space-between);
+
+    &__user {
+      @include flexbox();
+      > * {
+        margin-right: 15px;
+      }
+    }
+    &__icons {
+      @include flexbox();
+
+      > * {
+        margin-right: 15px;
+        width: 20px;
+        opacity: 0.4;
+      }
+    }
+  }
+}

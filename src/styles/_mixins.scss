@@ -63,3 +63,20 @@
     @content;
   }
 }
+
+// Extra media queries
+@mixin defaultPadding {
+  padding: 0 32px;
+
+  @include desktop {
+    padding: 0 64px;
+  }
+}
+
+@mixin defaultMargin {
+  margin: 0 32px;
+
+  @include desktop {
+    margin: 0 64px;
+  }
+}

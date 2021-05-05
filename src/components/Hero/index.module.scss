@@ -5,11 +5,13 @@
   height: 60vh;
 
   background: url("https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/cover.png");
-  background-position: center center;
-  background-size: cover;
+  background-size: 100vh;
+  background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   @include desktop {
-    height: 640px;
+    background-size: 100vw;
+    height: 560px;
   }
 }
