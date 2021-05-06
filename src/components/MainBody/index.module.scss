@@ -2,6 +2,7 @@
 @import "../../styles/_variables";
 
 .MainBody {
+  position: relative;
   @include defaultPadding();
   @include defaultMargin();
 

@@ -1,0 +1,33 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.InfoCard {
+  height: 414px;
+  width: 310px;
+
+  padding: 0 28px;
+  border-radius: 12px;
+  background: $primary_color;
+
+  font-family: $header_text;
+
+  overflow: hidden;
+
+  &_id {
+    position: relative;
+    color: $secondary_color;
+    font-size: 12rem;
+    font-weight: 700;
+    margin-left: -52px;
+    margin-top: -62px;
+    z-index: 0;
+  }
+  &_content {
+    position: relative;
+    top: -284px;
+  }
+
+  &_title {
+    margin: 28px 0;
+  }
+}
