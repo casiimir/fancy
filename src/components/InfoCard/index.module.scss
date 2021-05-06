@@ -2,6 +2,7 @@
 @import "../../styles/variables";
 
 .InfoCard {
+  position: relative;
   height: 414px;
   width: 310px;
 
@@ -28,6 +29,10 @@
   }
 
   &_title {
-    margin: 28px 0;
+    margin: 16px 0 24px;
   }
+}
+
+.noHeader {
+  transform: translateY(95px);
 }

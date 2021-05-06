@@ -1,18 +1,20 @@
 import styles from "./index.module.scss";
 
-const InfoCard = () => {
+const InfoCard = ({ title, subTitle, value, button, icon }) => {
   return (
     <div className={styles.InfoCard}>
-      <h2 className={styles.InfoCard_id}>01</h2>
+      <h2 className={styles.InfoCard_id}>{value}</h2>
       <div className={styles.InfoCard_content}>
-        <p className={styles.InfoCard_icon}>🐼</p>
-        <p className={styles.InfoCard_subtitle}>
-          Sapeva pure ca oggi je e te stevema inda 'sta machina
-        </p>
-        <h2 className={styles.InfoCard_title}>
-          Quann' tu me purtast' a spara' chillu cristian' p'a prima vota.
+        {icon && <p className={styles.InfoCard_icon}>{icon}</p>}
+        <p className={styles.InfoCard_subtitle}>{subTitle}</p>
+        <h2
+          className={`${styles.InfoCard_title} ${!subTitle && styles.noHeader}`}
+        >
+          {title}
         </h2>
-        <button className={styles.InfoCard_button}>Clicca qui</button>
+        {button && (
+          <button className={styles.InfoCard_button}>Clicca qui</button>
+        )}
       </div>
     </div>
   );
