@@ -11,6 +11,19 @@
     background: rgba(0, 0, 0, 0.85);
   }
 
+  &_exit {
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+
+    button {
+      color: $light_color;
+      font-size: 3rem;
+      outline: none;
+      border: 0;
+    }
+  }
+
   &_content {
     position: relative;
 
