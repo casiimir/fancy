@@ -10,4 +10,16 @@
   border-top-right-radius: 12px;
 
   transform: translateY(-180px);
+  transition: all 0.35s;
+}
+
+.full_width {
+  padding: 0 128px;
+  margin: 0;
+
+  @include mobile {
+    padding: 0;
+    @include defaultPadding();
+    @include defaultMargin();
+  }
 }
