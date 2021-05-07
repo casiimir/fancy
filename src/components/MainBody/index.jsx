@@ -3,9 +3,9 @@ import PostContainer from "../PostContainer";
 import GridGallery from "../GridGallery";
 import InfoCardsList from "../InfoCardsList";
 
-const MainBody = ({ onGalleryHandle }) => {
+const MainBody = ({ onGalleryHandle, fullWidthMain }) => {
   return (
-    <div className={styles.MainBody}>
+    <div className={`${styles.MainBody} ${fullWidthMain && styles.full_width}`}>
       <PostContainer />
       <GridGallery />
       <InfoCardsList onGalleryHandle={onGalleryHandle} />
