@@ -3,16 +3,28 @@
 
 .InfoCard {
   position: relative;
-  height: 414px;
-  width: 310px;
+  height: 370px;
+  width: 100vw;
 
   padding: 0 28px;
-  border-radius: 12px;
   background: $primary_color;
 
   font-family: $header_text;
-
   overflow: hidden;
+
+  @include tablet {
+    height: 284px;
+  }
+  @include desktop {
+    width: 310px;
+    height: 414px;
+    border-radius: 12px;
+  }
+  @include desktopXL {
+    width: 450px;
+    height: 514px;
+    border-radius: 12px;
+  }
 
   &_id {
     position: relative;

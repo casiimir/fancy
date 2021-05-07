@@ -3,10 +3,15 @@
 
 .InfoCardsList {
   @include flexbox(center, center, column);
-  position: fixed;
-  top: 0;
-  right: 97px;
-  transform: translateY(-65px);
+  margin-top: 50px;
+
+  @include desktop {
+    @include flexbox(center, center, column);
+    position: fixed;
+    top: 0;
+    right: 97px;
+    transform: translateY(-145px);
+  }
 
   > * {
     margin-bottom: 30px;
