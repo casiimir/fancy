@@ -7,14 +7,7 @@ const Modal = ({ children, onHandle }) => {
       <div className={styles.Modal_exit}>
         <button onClick={() => onHandle(false)}>X</button>
       </div>
-      <div className={styles.Modal_content}>
-        <ul>
-          <li>Lorem</li>
-          <li>Ipsum</li>
-          <li>Dolor</li>
-        </ul>
-        {children}
-      </div>
+      <div className={styles.Modal_content}>{children}</div>
     </div>
   );
 };
