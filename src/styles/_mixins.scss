@@ -1,3 +1,10 @@
+@mixin fullPosition($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
 @mixin center($width: 100%, $ma-y: 0, $ma-x: auto) {
   width: $width;
   margin: $ma-y $ma-x;

@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 import MainBody from "./components/MainBody";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <MainBody />
+      {/* <Modal /> */}
     </div>
   );
 }
