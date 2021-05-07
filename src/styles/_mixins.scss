@@ -70,6 +70,12 @@
   }
 }
 
+@mixin desktopXL {
+  @media (min-width: 1700px) {
+    @content;
+  }
+}
+
 // Extra media queries
 @mixin defaultPadding {
   padding: 0 32px;

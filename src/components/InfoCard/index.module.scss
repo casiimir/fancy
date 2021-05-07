@@ -1,0 +1,50 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.InfoCard {
+  position: relative;
+  height: 370px;
+  width: 100vw;
+
+  padding: 0 28px;
+  background: $primary_color;
+
+  font-family: $header_text;
+  overflow: hidden;
+
+  @include tablet {
+    height: 284px;
+  }
+  @include desktop {
+    width: 310px;
+    height: 414px;
+    border-radius: 12px;
+  }
+  @include desktopXL {
+    width: 450px;
+    height: 514px;
+    border-radius: 12px;
+  }
+
+  &_id {
+    position: relative;
+    color: $secondary_color;
+    font-size: 12rem;
+    font-weight: 700;
+    margin-left: -52px;
+    margin-top: -62px;
+    z-index: 0;
+  }
+  &_content {
+    position: relative;
+    top: -284px;
+  }
+
+  &_title {
+    margin: 16px 0 24px;
+  }
+}
+
+.noHeader {
+  transform: translateY(95px);
+}

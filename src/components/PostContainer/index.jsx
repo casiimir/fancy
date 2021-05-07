@@ -14,7 +14,9 @@ const PostContainer = () => {
 
   return (
     postList &&
-    postList.map(({ id, ...postData }) => <SinglePost {...postData} key={id} />)
+    postList.map(({ ...postData }) => (
+      <SinglePost {...postData} key={postData.id} />
+    ))
   );
 };
 
