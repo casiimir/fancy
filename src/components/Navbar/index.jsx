@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 import menu from "../../img/menu.png";
 
-const Navbar = () => {
+const Navbar = ({ onHandle }) => {
   return (
     <nav className={styles.Navbar}>
       <h3 className={styles.Navbar_logo}>Fancy</h3>
@@ -10,7 +10,9 @@ const Navbar = () => {
       <button className={styles.Navbar_btn}>
         <img
           className={styles.Navbar_btn__image}
-          onClick={() => {}}
+          onClick={() => {
+            onHandle(true);
+          }}
           src={menu}
           alt="menu-icon"
         />

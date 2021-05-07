@@ -20,10 +20,12 @@
   &_btn {
     background: transparent;
     border: 0;
+    display: none;
     outline: none;
+    text-align: right;
 
-    @include desktop() {
-      display: none;
+    @include mobile() {
+      display: block;
     }
   }
   &_btn__image {
@@ -44,10 +46,12 @@
 
     ul {
       @include flexbox();
+      padding: 0;
       list-style: none;
+      margin-left: -24px;
 
       li {
-        margin-left: 25px;
+        margin: 0 12px;
 
         color: $grey_color_light;
 
