@@ -3,11 +3,15 @@ import InfoCard from "../InfoCard";
 
 import posts from "../../posts.json";
 
-const InfoCardsList = () => {
+const InfoCardsList = ({ onGalleryHandle }) => {
   return (
     <div className={styles.InfoCardsList}>
       {posts.map(({ ...infoCardsData }) => (
-        <InfoCard {...infoCardsData} key={infoCardsData.value} />
+        <InfoCard
+          {...infoCardsData}
+          key={infoCardsData.value}
+          onGalleryHandle={onGalleryHandle}
+        />
       ))}
     </div>
   );

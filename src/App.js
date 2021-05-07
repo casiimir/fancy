@@ -9,24 +9,27 @@ import ExtGallery from "./components/ExtGallery";
 
 function App() {
   const [isModalVisible, setModalVisibile] = useState(false);
+  const [isGalleryVisibile, setGalleryVisible] = useState(false);
 
   return (
     <div className={styles.App}>
       <Navbar onHandle={setModalVisibile} />
       <Hero />
-      <MainBody />
+      <MainBody onGalleryHandle={setGalleryVisible} />
       {isModalVisible && (
         <Modal onHandle={setModalVisibile}>
           <ul>
             <li>Lorem</li>
             <li>Ipsum</li>
             <li>Dolor</li>
-          </ul>{" "}
+          </ul>
         </Modal>
       )}
-      <Modal>
-        <ExtGallery />
-      </Modal>
+      {isGalleryVisibile && (
+        <Modal>
+          <ExtGallery onGalleryHandle={setGalleryVisible} />
+        </Modal>
+      )}
     </div>
   );
 }

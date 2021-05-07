@@ -3,12 +3,12 @@ import PostContainer from "../PostContainer";
 import GridGallery from "../GridGallery";
 import InfoCardsList from "../InfoCardsList";
 
-const MainBody = () => {
+const MainBody = ({ onGalleryHandle }) => {
   return (
     <div className={styles.MainBody}>
       <PostContainer />
       <GridGallery />
-      <InfoCardsList />
+      <InfoCardsList onGalleryHandle={onGalleryHandle} />
     </div>
   );
 };

@@ -1,6 +1,13 @@
 import styles from "./index.module.scss";
 
-const InfoCard = ({ title, subTitle, value, button, icon }) => {
+const InfoCard = ({
+  title,
+  subTitle,
+  value,
+  button,
+  icon,
+  onGalleryHandle,
+}) => {
   return (
     <div className={styles.InfoCard}>
       <h2 className={styles.InfoCard_id}>{value}</h2>
@@ -13,7 +20,12 @@ const InfoCard = ({ title, subTitle, value, button, icon }) => {
           {title}
         </h2>
         {button && (
-          <button className={styles.InfoCard_button}>Clicca qui</button>
+          <button
+            className={styles.InfoCard_button}
+            onClick={() => onGalleryHandle(true)}
+          >
+            Clicca qui
+          </button>
         )}
       </div>
     </div>

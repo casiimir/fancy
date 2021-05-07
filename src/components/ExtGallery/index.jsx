@@ -1,12 +1,11 @@
 import styles from "./index.module.scss";
 import ImgGallery from "../../imgGallery.json";
 
-const ExtGallery = () => {
+const ExtGallery = ({ onGalleryHandle }) => {
   return (
     <div className={styles.ExtGallery}>
       <div className={styles.ExtGallery_overlay}></div>
       <div className={styles.ExtGallery_content}>
-        <h3 className={styles.ExtGallery_header}></h3>
         <div className={styles.ExtGallery_gallery__text}>
           <h3>
             Quann' tu me purtast' a spara' chillu cristian' p'a prima vota.
@@ -22,6 +21,12 @@ const ExtGallery = () => {
             />
           ))}
         </div>
+      </div>
+      <div
+        className={styles.ExtGallery_closeBtn}
+        onClick={() => onGalleryHandle(false)}
+      >
+        X
       </div>
     </div>
   );
