@@ -22,12 +22,6 @@ const ExtGallery = ({ onGalleryHandle }) => {
           ))}
         </div>
       </div>
-      <div
-        className={styles.ExtGallery_closeBtn}
-        onClick={() => onGalleryHandle(false)}
-      >
-        X
-      </div>
     </div>
   );
 };
