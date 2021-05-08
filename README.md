@@ -1,13 +1,13 @@
 <h2 align="center">Fancy.</h2>
 
 <p align="center">
-  <img src="./mockup.jpeg" alt="fancy"/>
+  <img src="./mockup.jpg" alt="fancy"/>
 </p>
 
 <hr>
 
 <h2 align="center">Welcome in a Fancy world!</h2>
-<img align="right" src="./mockup2.jpg" alt="fancy" width=150/>
+<img align="right" src="./mockup2.png" alt="fancy" width=150/>
 
 <h2>Technologies used</h2>
   <ul>
