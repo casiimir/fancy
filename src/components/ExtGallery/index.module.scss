@@ -15,12 +15,15 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
+    z-index: 0;
   }
 
   &_content {
+    position: relative;
     width: 100vw;
     height: 100vh;
 
+    z-index: 1;
     animation: openGallery 0.35s;
 
     @include desktop {
@@ -63,6 +66,7 @@
     padding: 8% 55% 8% 10%;
     overflow: hidden;
     overflow-x: auto;
+
     animation: getUp 1s;
   }
   &_gallery__img {
