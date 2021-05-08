@@ -21,8 +21,6 @@
 
 <hr>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## How to run it!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
