@@ -42,7 +42,7 @@ function App() {
       )}
       {isGalleryVisibile && (
         <Modal>
-          <ExtGallery onGalleryHandle={setGalleryVisible} />
+          <ExtGallery onHandle={setGalleryVisible} />
         </Modal>
       )}
     </div>

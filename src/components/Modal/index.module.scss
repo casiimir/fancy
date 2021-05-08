@@ -9,6 +9,7 @@
     position: fixed;
     @include fullPosition;
     background: rgba(0, 0, 0, 0.85);
+    z-index: 2;
   }
 
   &_exit {
@@ -34,7 +35,6 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    z-index: 1;
 
     ul {
       display: flex;
@@ -44,6 +44,10 @@
       height: 70vh;
 
       list-style: none;
+
+      li {
+        z-index: 2;
+      }
     }
   }
 }

@@ -1,10 +1,13 @@
 import styles from "./index.module.scss";
 import ImgGallery from "../../imgGallery.json";
 
-const ExtGallery = ({ onGalleryHandle }) => {
+const ExtGallery = ({ onHandle }) => {
   return (
     <div className={styles.ExtGallery}>
-      <div className={styles.ExtGallery_overlay}></div>
+      <div
+        className={styles.ExtGallery_overlay}
+        onClick={() => onHandle(false)}
+      ></div>
       <div className={styles.ExtGallery_content}>
         <div className={styles.ExtGallery_gallery__text}>
           <h3>
