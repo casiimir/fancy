@@ -13,14 +13,15 @@ const SinglePost = ({ title, body }) => {
           <img
             src="https://www.svgrepo.com/show/122119/user-image-with-black-background.svg"
             alt="user-icon"
-            width="35"
+            width="28"
+            height="28"
           />
           <p>Lorem Ipsum</p>
         </div>
         <div className={styles.SinglePost_info__icons}>
-          <img src="./facebook.png" alt="facebook" />
-          <img src="./instagram.png" alt="instagram" />
-          <img src="./twitter.png" alt="twitter" />
+          <img src="./facebook.png" alt="facebook" width="34" height="20" />
+          <img src="./instagram.png" alt="instagram" width="36" height="21" />
+          <img src="./twitter.png" alt="twitter" width="36" height="21" />
         </div>
       </div>
     </div>
